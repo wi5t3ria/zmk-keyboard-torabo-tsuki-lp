@@ -23,6 +23,16 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <36 35>;
         };
+
+        ctrl+tab {
+            bindings = <&kp LC(TAB)>;
+            key-positions = <12 24>;
+        };
+
+        shift+ctrl+tab {
+            bindings = <&kp LS(LC(TAB))>;
+            key-positions = <12 24 38>;
+        };
     };
 
     keymap {
