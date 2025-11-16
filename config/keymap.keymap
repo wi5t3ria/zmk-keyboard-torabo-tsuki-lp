@@ -26,17 +26,17 @@
 
         ctrl+tab {
             bindings = <&kp LC(TAB)>;
-            key-positions = <12 24>;
+            key-positions = <13 25>;
         };
 
         shift+ctrl+tab {
             bindings = <&kp LS(LC(TAB))>;
-            key-positions = <12 24 38>;
+            key-positions = <13 25 39>;
         };
 
         ctrl {
             bindings = <&kp LCTRL>;
-            key-positions = <24 25>;
+            key-positions = <25 26>;
         };
     };
 
