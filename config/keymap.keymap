@@ -35,6 +35,11 @@
             bindings = <&kp LCTRL>;
             key-positions = <36 35>;
         };
+
+        ctrl_tab {
+            bindings = <&kp LC(TAB)>;
+            key-positions = <26 27>;
+        };
     };
 
     keymap {
