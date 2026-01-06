@@ -7,7 +7,6 @@
 &mt {
     tapping-term-ms = <400>;
     require-prior-idle-ms = <125>;
-    quick-tap-ms = <0>;
     retro-tap;
 };
 
@@ -16,12 +15,6 @@
 / {
     combos {
         compatible = "zmk,combos";
-
-        bt_clear {
-            bindings = <&bt BT_CLR>;
-            key-positions = <28 29>;
-            layers = <2>;
-        };
 
         tab {
             bindings = <&kp TAB>;
@@ -33,19 +26,14 @@
             key-positions = <36 35>;
         };
 
-        ctrl+tab {
-            bindings = <&kp LC(TAB)>;
-            key-positions = <13 25>;
-        };
-
-        shift+ctrl+tab {
-            bindings = <&kp LS(LC(TAB))>;
-            key-positions = <13 25 39>;
+        tab2 {
+            bindings = <&kp TAB>;
+            key-positions = <25 26>;
         };
 
         ctrl {
             bindings = <&kp LCTRL>;
-            key-positions = <25 26>;
+            key-positions = <36 35>;
         };
     };
 
@@ -58,7 +46,7 @@
 &none  &kp Q             &kp W         &kp E         &kp R      &kp T                                             &kp Y                &kp U  &kp I      &kp O        &kp P                 &none
 &none  &kp A             &kp S         &kp D         &kp F      &kp G        &none             &none              &kp H                &kp J  &kp K      &kp L        &kp SEMI              &none
 &none  &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V      &kp B        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp N                &kp M  &kp COMMA  &kp DOT      &mt RIGHT_SHIFT FSLH  &none
-&none  &kp LCTRL         &kp LEFT_ALT  &kp LEFT_GUI  &mkp LCLK  &lt 2 SPACE  &lt 1 BACKSPACE   &kp ESCAPE         &mt RIGHT_GUI ENTER  &none  &none      &lt 3 SPACE  &kp RCTRL             &none
+&none  &kp LCTRL         &kp LEFT_ALT  &kp LEFT_GUI  &mkp LCLK  &lt 2 SPACE  &lt 1 BACKSPACE   &kp ESCAPE         &mt RIGHT_GUI ENTER  &none  &none      &lt 3 SPACE  &kp LEFT_ALT          &none
             >;
         };
 
