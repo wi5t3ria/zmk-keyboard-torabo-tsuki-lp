@@ -33,7 +33,7 @@
 
         ctrl {
             bindings = <&kp LCTRL>;
-            key-positions = <36 35>;
+            key-positions = <49 50>;
         };
 
         ctrl_tab {
