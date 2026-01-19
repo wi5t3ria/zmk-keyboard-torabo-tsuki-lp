@@ -5,9 +5,9 @@
 #include <dt-bindings/zmk/pointing.h>
 
 &mt {
-    tapping-term-ms = <400>;
     require-prior-idle-ms = <125>;
     retro-tap;
+    flavor = "balanced";
 };
 
 &lt { quick-tap-ms = <150>; };
